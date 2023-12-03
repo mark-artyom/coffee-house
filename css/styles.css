@@ -172,12 +172,13 @@ body{
 .hero-offer-title {
     align-self: stretch;
     color: var(--text-light);
-    font-feature-settings: 'clig' off, 'liga' off;font-size: 72px;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 72px;
     font-style: normal;
     font-weight: 600;
     line-height: 105%;
 }
-.offer-title-enjoy {
+.title-accent {
     color: var(--text-accent);
 }
 .hero-offer-text {
@@ -211,7 +212,153 @@ body{
 /*------------SECTION-FAVORITE-COFFEE-----------*/
 .favorite-coffee {
 }
-.favorite-coffee-container {
+.favorite-cofee-container {
+    display: flex;
+    max-width: 1360px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+}
+.coffee-container-title {
+    align-self: stretch;
+    color: var(--text-dark);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+}
+.favorite-coffee-carousel {
+    display: flex;
+    width: 1360px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.carousel-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+}
+.slider-button-default {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    border: 1px solid var(--border-dark);
+}
+.img-arrow {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+.carousel-sliders {
+    display: flex;
+    min-width: 480px;
+    max-width: 1152px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex: 1 0 0;
+}
+.carousel-slide-1 {
+    display: flex;
+    width: 1152px;
+    min-width: 480px;
+    max-width: 1162px;
+    flex-direction: column;
+    align-items: center;
+}
+.content-slide {
+    display: flex;
+    width: 480px;
+    max-width: 480px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.img-slide {
+    width: 480px;
+    height: 480px;
+}
+.description-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+}
+.description-title {
+    align-self: stretch;
+    color: var(--text-dark);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+}
+.description-text {
+    align-self: stretch;
+    color: var(--text-dark);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+.description-price {
+    align-self: stretch;
+    color: var(--text-dark);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+}
+.carousel-slide-2 {
+    display: none;
+    visibility: hidden;
+    /* display: flex; ---убрать верхние две строки*/
+    width: 1152px;
+    min-width: 480px;
+    max-width: 1162px;
+    flex-direction: column;
+    align-items: center;
+}
+.carousel-slide-3 {
+    display: none;
+    visibility: hidden;
+    /* display: flex; ---убрать верхние две строки*/
+    width: 1152px;
+    min-width: 480px;
+    max-width: 1162px;
+    flex-direction: column;
+    align-items: center;
+}
+.carousel-slider-controls {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+.slider-control-current {
+    width: 40px;
+    height: 4px;
+    border-radius: 100px;
+    background: var(--border-dark);
+}
+.slider-control-inactive {
+    width: 40px;
+    height: 4px;
+    border-radius: 100px;
+    background: var(--border-light);
 }
 /*-----------------SECTION-ABOUT----------------*/
 .about {
