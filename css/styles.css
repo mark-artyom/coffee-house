@@ -34,6 +34,7 @@ body{
     font-family: Inter;
     color: black;
     background-color: var(--background-body);
+
 }
 :root {
     --text-dark: #403F3D;
@@ -46,28 +47,38 @@ body{
     --border-dark: #665F55;
 }
 .wrapper{
-    min-height: 100%;
-    overflow: hidden;
+    display: flex;
+    width: 1440px;
+    padding: 20px 0px 40px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
 }
-.-container {
-    max-width: 1360px;
-    padding: 0px 40px;
-    margin: 0px auto;
-    box-sizing: content-box;
+/*--------------------HEADER--------------------*/
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 /*-------------------NAVI-MENU------------------*/
 .navi-menu {
 }
 .navi-menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
 }
 .menu-container {
     display: flex;
-    max-width: 1360px;
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
 }
 .menu-container-logo {
+    width: 100px;
+    height: 60px;
 }
 .logo {
 }
@@ -80,7 +91,10 @@ body{
     align-self: stretch;
 }
 .menu-item {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 4px;
 }
 .menu-item-link {
     color: var(--text-dark);
@@ -91,6 +105,16 @@ body{
     line-height: 150%;
 }
 .container-menu-coffee {
+    display: flex;
+    height: 28px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.menu-coffee-button{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
 }
 .menu-coffee-text{
     color: var(--text-dark);
@@ -101,11 +125,88 @@ body{
     line-height: 150%;
 }
 .coffee-cup {
+    width: 20px;
+    height: 20px;
 }
-/*--------------------HEADER--------------------*/
-.header {
+/*-----------------SECTION-HERO-----------------*/
+.hero {
 }
-.header-container {
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+}
+.hero-container-wrapper{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    width: 1360px;
+    height: 644px;
+    padding: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: stretch;
+
+}
+.hero-container-video {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 40px;
+    background: url(./img/img-hero.png), lightgray 50% / cover no-repeat;
+}
+.hero-container-offer {
+    position: relative;
+    display: flex;
+    width: 530px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+.hero-offer-title {
+    align-self: stretch;
+    color: var(--text-light);
+    font-feature-settings: 'clig' off, 'liga' off;font-size: 72px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 105%;
+}
+.offer-title-enjoy {
+    color: var(--text-accent);
+}
+.hero-offer-text {
+    align-self: stretch;
+    color: var(--text-light);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+.hero-offer-button {
+    display: flex;
+    width: 200px;
+    padding: 20px 78px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 100px;
+    background: var(--background-body);
+}
+.offer-button-text {
+    color: var(--text-dark);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
 }
 /*------------SECTION-FAVORITE-COFFEE-----------*/
 .favorite-coffee {
