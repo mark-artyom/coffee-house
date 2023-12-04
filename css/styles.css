@@ -47,7 +47,8 @@ body{
 }
 .wrapper{
     display: flex;
-    max-width: 1440px;
+    width: 1440px;
+    height: 4388px;
     width: 100%;
     padding: 20px 0px 40px 0px;
     flex-direction: column;
