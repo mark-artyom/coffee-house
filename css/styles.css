@@ -28,6 +28,7 @@ font-size: inherit;
 }
 html,
 body{
+    padding: 20px 0px 40px 0px;
     height: 100%;
     line-height: 1;
     font-size: 16px;
@@ -47,10 +48,8 @@ body{
 }
 .wrapper{
     display: flex;
-    width: 1440px;
-    height: 4388px;
+    height: 100%;
     width: 100%;
-    padding: 20px 0px 40px 0px;
     flex-direction: column;
     align-items: center;
     gap: 100px;
@@ -719,4 +718,173 @@ body{
     justify-content: center;
     align-items: flex-start;
     gap: 8px;
+}
+
+/*-------------------MENU-PAGE------------------*/
+.coffee-shop-menu {
+}
+.shop-menu-container {
+    display: flex;
+    max-width: 1360px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    align-self: stretch;
+}
+.shop-menu-offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+}
+.shop-menu-title {
+    width: 800px;
+    color: var(--text-dark);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+}
+.shop-mehu-tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.item-tab-active {
+    display: flex;
+    padding: 8px 16px 8px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 100px;
+    background: var(--background-container);
+}
+.tab-active-icon {
+    display: flex;
+    padding: 3px 7px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background: var(--background-body);
+}
+.tab-item {
+    color: var(--text-dark);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+.tab-active-text {
+    color: var(--text-light);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+.item-tab-inactive {
+    display: flex;
+    padding: 8px 16px 8px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 100px;
+    border: 1px solid var(--border-light);
+}
+.tab-inactive-icon {
+    display: flex;
+    padding: 3px 7px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background: var(--border-light);
+}
+.tab-inactive-text {
+    color: var(--text-dark);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+.shop-menu-grid {
+    display: grid;
+    grid-template-columns: 310px 310px 310px 310px;
+    max-width: 1360px;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.menu-grid-preview {
+    display: inline-flex;
+    height: 506px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 40px;
+    border: 1px solid var(--border-light);
+}
+.grid-preview-box {
+    width: 310px;
+    height: 310px;
+    flex-shrink: 0;
+    border-radius: 40px;
+}
+.product {
+    width: 310px;
+    height: 310px;
+    flex-shrink: 0;
+    border-radius: 40px;
+}
+.grid-preview-specification {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+.preview-specification-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+}
+.preview-specification-name {
+    align-self: stretch;
+    color: var(--text-dark);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+}
+.preview-specification-description {
+    align-self: stretch;
+    color: var(--text-dark);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+.grid-preview-price {
+    align-self: stretch;
+    color: var(--text-dark);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
 }
