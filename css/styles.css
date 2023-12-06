@@ -392,7 +392,7 @@ body{
     align-items: flex-start;
     gap: 40px;
 }
-.column-1-box-1 {
+.column-1-ever {
     display: flex;
     width: 660px;
     height: 590px;
@@ -400,31 +400,13 @@ body{
     align-items: center;
     border-radius: 20px;
 }
-.about-4-1-1 {
-    width: 726px;
-    height: 726px;
-    display: none;
-    visibility: hidden;
-}
-.about-3-1-1 {
-    width: 726px;
-    height: 726px;
-    display: none;
-    visibility: hidden;
-}
-.about-2-1-1 {
-    width: 726px;
-    height: 726px;
-    display: none;
-    visibility: hidden;
-}
-.about-1-1-1 {
+.about-1 {
     object-fit: cover;
     width: 660px;
     height: 590px;
     border-radius: 20px;
 }
-.column-1-box-2 {
+.column-1-fade {
     display: flex;
     width: 660px;
     height: 430px;
@@ -432,31 +414,13 @@ body{
     align-items: center;
     border-radius: 20px;
 }
-.about-4-1-2 {
-    width: 726px;
-    height: 726px;
-    display: none;
-    visibility: hidden;
-}
-.about-3-1-2 {
-    width: 726px;
-    height: 726px;
-    display: none;
-    visibility: hidden;
-}
-.about-2-1-2 {
+.about-2 {
     object-fit: cover;
     width: 660px;
     height: 430px;
     border-radius: 20px;
 }
-.about-1-1-2 {
-    width: 726px;
-    height: 726px;
-    display: none;
-    visibility: hidden;
-}
-.column-2-box-1 {
+.column-2-fade {
     display: flex;
     width: 660px;
     height: 430px;
@@ -464,31 +428,13 @@ body{
     align-items: center;
     border-radius: 20px;
 }
-.about-4-2-1 {
-    width: 726px;
-    height: 726px;
-    display: none;
-    visibility: hidden;
-}
-.about-3-2-1 {
+.about-3 {
     object-fit: cover;
     width: 660px;
     height: 430px;
     border-radius: 20px;
 }
-.about-2-2-1 {
-    width: 726px;
-    height: 726px;
-    display: none;
-    visibility: hidden;
-}
-.about-1-2-1 {
-    width: 726px;
-    height: 726px;
-    display: none;
-    visibility: hidden;
-}
-.column-2-box-2 {
+.column-2-ever {
     display: flex;
     width: 660px;
     height: 590px;
@@ -496,29 +442,11 @@ body{
     align-items: center;
     border-radius: 20px;
 }
-.about-4-2-2 {
+.about-4 {
     object-fit: cover;
     width: 660px;
     height: 590px;
     border-radius: 20px;
-}
-.about-3-2-2 {
-    width: 726px;
-    height: 726px;
-    display: none;
-    visibility: hidden;
-}
-.about-2-2-2 {
-    width: 726px;
-    height: 726px;
-    display: none;
-    visibility: hidden;
-}
-.about-1-2-2 {
-    width: 726px;
-    height: 726px;
-    display: none;
-    visibility: hidden;
 }
 /*---------------SECTION-MOBILE-APP-------------*/
 .mobile-app {
