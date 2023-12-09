@@ -28,8 +28,8 @@ font-size: inherit;
 }
 html,
 body{
-    padding: 20px 0px 40px 0px;
-    height: 100%;
+    width: 1440px;
+    margin: 0 auto;
     line-height: 1;
     font-size: 16px;
     font-family: Inter;
@@ -49,6 +49,7 @@ body{
 }
 .wrapper{
     display: flex;
+    padding: 20px 0px 40px 0px;
     height: 100%;
     width: 100%;
     flex-direction: column;
