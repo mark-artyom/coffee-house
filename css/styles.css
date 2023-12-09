@@ -98,14 +98,6 @@ body{
     align-items: center;
     gap: 4px;
 }
-.menu-item-link {
-    color: var(--text-dark);
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 150%;
-}
 .container-menu-coffee {
     display: flex;
     height: 28px;
@@ -118,10 +110,36 @@ body{
     align-items: center;
     gap: 4px;
 }
-.menu-coffee-text{
+.menu-item-link{
+    display: inline-block;
     color: var(--text-dark);
     font-feature-settings: 'clig' off, 'liga' off;
     font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+.menu-item-link:after{
+    display: block;
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #403F3D;
+    transition: width 0.3s ease-in-out;
+}
+.menu-item-link:hover:after,
+.menu-item-link:focus:after{
+    width: 100%;
+}
+.menu-coffee-cup{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+}
+.menu-coffee-text {
+    color: var(--text-dark);
+    font-feature-settings: 'clig' off, 'liga' off;
     font-style: normal;
     font-weight: 600;
     line-height: 150%;
@@ -196,24 +214,16 @@ body{
     font-weight: 400;
     line-height: 150%;
 }
-.hero-offer-button {
-    display: flex;
+.button-primary {
     width: 200px;
-    padding: 20px 78px;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
+    height: 64px;
     border-radius: 100px;
-    background: var(--background-body);
+    background-image: url(/coffee-house/svg/button-primary-default.svg);
+    background-size: cover;
 }
-.offer-button-text {
-    color: var(--text-dark);
-    text-align: center;
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 150%;
+.button-primary:hover {
+    background-image: url(/coffee-house/svg/button-primary-hover.svg);
+    transition: 0.3s;
 }
 /*------------SECTION-FAVORITE-COFFEE-----------*/
 .favorite-coffee {
@@ -250,19 +260,37 @@ body{
     gap: 40px;
     align-self: stretch;
 }
-.slider-button-default {
-    display: flex;
+.slider-button-left {
     width: 60px;
     height: 60px;
-    justify-content: center;
-    align-items: center;
     border-radius: 100px;
-    border: 1px solid var(--border-dark);
+    background-image: url(/coffee-house/svg/arrow-default.svg);
+    background-size: cover;
+    transform: rotate(180deg);
 }
-.img-arrow {
-    width: 24px;
-    height: 24px;
-    flex-shrink: 0;
+.slider-button-left:hover {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    background-image: url(/coffee-house/svg/arrow-hover.svg);
+    background-size: cover;
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+.slider-button-right {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    background-image: url(/coffee-house/svg/arrow-default.svg);
+    background-size: cover;
+}
+.slider-button-right:hover {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    background-image: url(/coffee-house/svg/arrow-hover.svg);
+    background-size: cover;
+    transition: 0.3s;
 }
 .carousel-sliders {
     display: flex;
@@ -496,36 +524,27 @@ body{
     align-items: flex-start;
     gap: 20px;
 }
-.btn-app-default {
-    display: flex;
+.button-app-store {
     width: 200px;
-    padding: 12px 20px;
-    align-items: center;
-    gap: 8px;
+    height: 64px;
     border-radius: 100px;
-    border: 1px solid var(--border-dark);
+    background-image: url(/coffee-house/svg/apple-default.svg);
+    background-size: cover;
 }
-.icon-app-default {
-    width: 36px;
-    height: 36px;
-    flex-shrink: 0;
+.button-app-store:hover {
+    background-image: url(/coffee-house/svg/apple-hover.svg);
+    transition: 0.3s;
 }
-.icon-apple {
+.button-google-play {
+    width: 200px;
+    height: 64px;
+    border-radius: 100px;
+    background-image: url(/coffee-house/svg/google-default.svg);
+    background-size: cover;
 }
-.content-app-default {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 2px;
-}
-.text-app-default {
-    color: var(--text-dark);
-    text-align: center;
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 140%;
+.button-google-play:hover {
+    background-image: url(/coffee-house/svg/google-hover.svg);
+    transition: 0.3s;
 }
 .name-app-default {
     color: var(--text-dark);
@@ -578,21 +597,38 @@ body{
     align-items: center;
     gap: 12px;
 }
-.social-btn-default {
-    display: flex;
+#twitter {
     width: 60px;
     height: 60px;
-    justify-content: center;
-    align-items: center;
     border-radius: 100px;
-    border: 1px solid var(--border-light);
+    background-image: url(/coffee-house/svg/twitter-default.svg);
+    background-size: cover;
 }
-.vector-btn-default {
-    width: 24px;
-    height: 24px;
-    flex-shrink: 0;
+#twitter:hover {
+    background-image: url(/coffee-house/svg/twitter-hover.svg);
+    transition: 0.3s;
 }
-.social-icon {
+#instagram {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    background-image: url(/coffee-house/svg/instagram-default.svg);
+    background-size: cover;
+}
+#instagram:hover {
+    background-image: url(/coffee-house/svg/instagram-hover.svg);
+    transition: 0.3s;
+}
+#facebook {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    background-image: url(/coffee-house/svg/facebook-default.svg);
+    background-size: cover;
+}
+#facebook:hover {
+    background-image: url(/coffee-house/svg/facebook-hover.svg);
+    transition: 0.3s;
 }
 .footer-contacts-info {
     display: flex;
@@ -625,22 +661,31 @@ body{
     gap: 4px;
 }
 .link-click {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 8px;
-}
-.icon-contact {
-    width: 20px;
-    height: 20px;
-}
-.link-contact-default {
+    display: inline-block;
     color: var(--text-light);
     font-feature-settings: 'clig' off, 'liga' off;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: 150%;
+}
+.link-click:after{
+    display: block;
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #E1D4C9;
+    transition: width 0.3s ease-in-out;
+}
+.link-click:hover:after,
+.link-click:focus:after{
+    width: 100%;
+}
+.icon-contact {
+    width: 20px;
+    height: 20px;
+}
+.link-contact-default {
 }
 .link-item-phone {
     display: flex;
@@ -653,6 +698,15 @@ body{
     justify-content: center;
     align-items: flex-start;
     gap: 8px;
+}
+.working-mode{
+    display: inline-block;
+    color: var(--text-light);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
 }
 
 /*-------------------MENU-PAGE------------------*/
@@ -766,6 +820,10 @@ body{
     align-items: center;
     border-radius: 40px;
     border: 1px solid var(--border-light);
+    transition: transform 0.3s;
+}
+.menu-grid-preview:hover {
+    transform: scale(1.1);
 }
 .grid-preview-box {
     width: 310px;
@@ -1079,21 +1137,13 @@ body{
     line-height: 140%;
 }
 .modal-button-secondary {
-    display: flex;
-    padding: 10px 78px;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    align-self: stretch;
+    width: 438px;
+    height: 44px;
     border-radius: 100px;
-    border: 1px solid var(--border-dark);
+    background-image: url(/coffee-house/svg/button-secondary-default.svg);
+    background-size: cover;
 }
-.button-secondary-text {
-    color: var(--text-dark);
-    text-align: center;
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 150%;
+.modal-button-secondary:hover {
+    background-image: url(/coffee-house/svg/button-secondary-hover.svg);
+    transition: 0.3s;
 }

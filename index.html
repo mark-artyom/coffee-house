@@ -44,7 +44,7 @@
                         </div>
                         <div class="container-menu-coffee">
                             <div class="menu-coffee-button">
-                                <a class="menu-coffee-text" href="/coffee-house/html/menu.html">
+                                <a class="menu-item-link" href="/coffee-house/html/menu.html">
                                     Menu
                                     <img class="coffee-cup" src="./svg/coffee-cup.svg" alt="coffee-cup">
                                 </a>
@@ -64,11 +64,9 @@
                             <div class="hero-offer-text">
                             With its inviting atmosphere and delicious coffee options, the Coffee<br>House Resource is a popular destination for coffee lovers and those<br>seeking a warm and inviting space to enjoy their favorite beverage.
                             </div>
-                            <a href="/coffee-house/html/menu.html"><div class="hero-offer-button">
-                                <p class="offer-button-text">
-                                Menu
-                                </p>
-                            </div></a>
+                            <a href="/coffee-house/html/menu.html">
+                                <div class="button-primary"></div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -79,9 +77,7 @@
                 <div class="coffee-container-title">Choose your <i class="title-accent">favorite</i> coffee</div>
                 <div class="favorite-coffee-carousel">
                     <div class="carousel-slider">
-                        <div class="slider-button-default">
-                            <img src="./svg/arrow-left.svg" alt="arrow-left" class="img-arrow">
-                        </div>
+                        <div class="slider-button-left" id="arrow-left"></div>
                         <div class="carousel-sliders">
                             <div class="carousel-slide-1">
                                 <div class="content-slide">
@@ -114,9 +110,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="slider-button-default">
-                            <img src="./svg/arrow-right.svg" alt="arrow-right" class="img-arrow">
-                        </div>
+                        <div class="slider-button-right" id="arrow-right"></div>
                     </div>
                     <div class="carousel-slider-controls">
                         <div class="slider-control-current"></div>
@@ -161,24 +155,12 @@
                         Download the Resource app today and experience the comfort of ordering your<br>favorite coffee from wherever you are
                     </div>
                     <div class="app-offer-buttons">
-                        <div class="btn-app-default">
-                            <div class="icon-app-default">
-                                <img src="./svg/apple-default.svg" alt="icon-apple" class="icon-apple">
-                            </div>
-                            <div class="content-app-default">
-                                <div class="text-app-default">Available on the</div>
-                                <div class="name-app-default">App Store</div>
-                            </div>
-                        </div>
-                        <div class="btn-app-default">
-                            <div class="icon-app-default">
-                                <img src="./svg/market-default.svg" alt="icon-market" class="icon-market">
-                            </div>
-                            <div class="content-app-default">
-                                <div class="text-app-default">Available on the</div>
-                                <div class="name-app-default">Google Play</div>
-                            </div>
-                        </div>
+                        <a href="https://apps.apple.com/us/app/mcdonalds/id922103212" target="_blank">
+                            <div class="button-app-store"></div>
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.mcdonalds.app&hl=en" target="_blank">
+                            <div class="button-google-play"></div>
+                        </a>
                     </div>
                 </div>
                 <div class="mobile-app-screen">
@@ -191,21 +173,15 @@
                 <div class="footer-container-offer">
                     <div class="footer-offer-text">Sip, Savor, Smile.<br><i class="title-accent">It’s coffee time!</i></div>
                     <div class="footer-offer-social">
-                        <div class="social-btn-default">
-                            <div class="vector-btn-default">
-                                <img src="./svg/twitter.svg" alt="twitter" class="social-icon">
-                            </div>
-                        </div>
-                        <div class="social-btn-default">
-                            <div class="vector-btn-default">
-                                <img src="./svg/instagram.svg" alt="instagram" class="social-icon">
-                            </div>
-                        </div>
-                        <div class="social-btn-default">
-                            <div class="vector-btn-default">
-                                <img src="./svg/facebook.svg" alt="facebook" class="social-icon">
-                            </div>
-                        </div>
+                        <a href="https://twitter.com/McDonalds" class="social-button" target="_blank">
+                            <div class="icon-social-button" id="twitter"></div>
+                        </a>
+                        <a href="https://www.instagram.com/mcdonalds/" class="social-button" target="_blank">
+                            <div class="icon-social-button" id="instagram"></div>
+                        </a>
+                        <a href="https://www.facebook.com/McDonalds/" class="social-button" target="_blank">
+                            <div class="icon-social-button" id="facebook"></div>
+                        </a>
                     </div>
                 </div>
                 <div class="footer-contacts-info">
@@ -224,7 +200,7 @@
                             </a>
                         </div>
                         <div class="item-working-mode">
-                            <div class="link-click">
+                            <div class="working-mode">
                                 <img src="./svg/clock.svg" alt="working-mode" class="icon-contact">
                                 <span class="link-contact-default">Mon-Sat: 9:00 AM – 23:00 PM</span>
                             </div>
