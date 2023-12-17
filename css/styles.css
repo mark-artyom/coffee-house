@@ -1250,7 +1250,7 @@ body{
     align-self: stretch;
 }
 .shop-menu-title {
-    width: 100%;
+    width: 800px;
     color: var(--text-dark);
     text-align: center;
     font-feature-settings: 'clig' off, 'liga' off;
