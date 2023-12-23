@@ -86,47 +86,59 @@
         <section class="favorite-coffee" id="favorite-coffee">
             <div class="favorite-cofee-container">
                 <div class="coffee-container-title">Choose your <i class="title-accent">favorite</i> coffee</div>
-                <div class="favorite-coffee-carousel">
-                    <div class="carousel-slider">
-                        <div class="slider-button-left" id="arrow-left"></div>
-                        <div class="carousel-sliders">
-                            <div class="carousel-slide-1">
-                                <div class="content-slide">
-                                    <img src="./img/coffee-slider-1.png" alt="S’mores Frappuccino" class="img-slide">
-                                    <div class="description-slide">
-                                        <div class="description-title">S’mores Frappuccino</div>
-                                        <div class="description-text">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</div>
-                                        <div class="description-price">$5.50</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-slide-2">
-                                <div class="content-slide">
-                                    <img src="./img/coffee-slider-2.png" alt="Caramel Macchiato" class="img-slide">
-                                    <div class="description-slide">
-                                        <div class="description-title">Caramel Macchiato</div>
-                                        <div class="description-text">Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under whipped thick foam.</div>
-                                        <div class="description-price">$5.00</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-slide-3">
-                                <div class="content-slide">
-                                    <img src="./img/coffee-slider-3.png" alt="Ice coffee" class="img-slide">
-                                    <div class="description-slide">
-                                        <div class="description-title">Ice coffee</div>
-                                        <div class="description-text">A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.</div>
-                                        <div class="description-price">$4.50</div>
-                                    </div>
+                <div class="carousel">
+                    <div class="control left">
+                        <div class="arrow left">
+                            <img src="/coffee-house/svg/arrow.svg" alt="" class="left-arrow">
+                        </div>
+                    </div>
+                    <div class="item-container">
+                        <div class="item active">
+                            <div class="item-description">
+                                <img src="/coffee-house/img/coffee-slider-1.png" alt="" class="img-slide">
+                                <div class="item-description-text">
+                                    <div class="item-name">S’mores Frappuccino</div>
+                                    <div class="item-specification">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</div>
+                                    <div class="item-price">$5.50</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="slider-button-right" id="arrow-right"></div>
+                        <div class="item">
+                            <div class="item-description">
+                                <img src="/coffee-house/img/coffee-slider-2.png" alt="" class="img-slide">
+                                <div class="item-description-text">
+                                    <div class="item-name">Caramel Macchiato</div>
+                                    <div class="item-specification">Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under whipped thick foam.</div>
+                                    <div class="item-price">$5.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-description">
+                                <img src="/coffee-house/img/coffee-slider-3.png" alt="" class="img-slide">
+                                <div class="item-description-text">
+                                    <div class="item-name">Ice coffee</div>
+                                    <div class="item-specification">A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.</div>
+                                    <div class="item-price">$4.50</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="carousel-slider-controls">
-                        <div class="slider-control-current"></div>
-                        <div class="slider-control-inactive"></div>
-                        <div class="slider-control-inactive"></div>
+                    <div class="control right">
+                        <div class="arrow right">
+                            <img src="/coffee-house/svg/arrow.svg" alt="" class="right-arrow">
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination-controls">
+                    <div class="pagination-control">
+                        <div class="progress-bar progress-active"></div>
+                    </div>
+                    <div class="pagination-control">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <div class="pagination-control">
+                        <div class="progress-bar"></div>
                     </div>
                 </div>
             </div>
