@@ -143,14 +143,16 @@ body{
     .menu-item-link:after{
         display: block;
         content: '';
-        width: 0%;
+        width: 100%;
         height: 2px;
         background: #403F3D;
-        transition: width 0.3s ease-in-out;
+        transform: scaleX(0);
+        transform-origin: center;
+        transition: transform 0.3s ease-in-out;
     }
     .menu-item-link:hover:after,
     .menu-item-link:focus:after{
-        width: 100%;
+        transform: scaleX(1);
     }
 }
 .menu-coffee-cup{
@@ -244,13 +246,13 @@ body{
         background-color: var(--text-dark);
         transition: all 0.4s ease-in-out;
     }
-    .button-burger-content.active span{
+    .button-burger-content.decomposed span{
         transform: scale(0);
     }
-    .button-burger-content.active:before {
+    .button-burger-content.decomposed:before {
         transform: rotateZ(135deg) scaleX(1.25) translate(3px, -3px);
     }
-    .button-burger-content.active:after {
+    .button-burger-content.decomposed:after {
         transform: rotateZ(-135deg) scaleX(1.25) translate(3px, 3px);
     }
     .burger-menu-menu {
@@ -265,8 +267,8 @@ body{
         position: fixed;
         width: 768px;
         height: 100vh;
-        top: -100%;
-        left: 0;
+        top: 80px;
+        right: -100%;
         padding: 60px 40px;
         flex-direction: column;
         align-items: center;
@@ -277,8 +279,8 @@ body{
         transition: all 0.4s ease-in-out;
         z-index: 2;
     }
-    .burger-menu-menu.active{
-        top: 0;
+    .burger-menu-menu.decomposed{
+        right: 0;
     }
     .menu-container-items {
         display: flex;
@@ -323,6 +325,7 @@ body{
     }
     .burger-menu-menu {
         width: 380px;
+        padding: 60px 16px;
     }
 }
 @media (min-width: 768px){
@@ -429,26 +432,45 @@ body{
     line-height: 150%;
 }
 .button-primary {
+    display: flex;
     width: 200px;
-    height: 64px;
+    padding: 20px 78px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
     border-radius: 100px;
-    background-image: url(/coffee-house/svg/button-primary-default.svg);
-    background-size: cover;
+    background: var(--background-body);
+}
+.link-button-primary {
+    color: var(--text-dark, #403F3D);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+.cup-button-primary {
+    display: none;
+    width: 20px;
+    height: 20px;
+    transform: scale(0);
+    transition: transform 0.3s ease-in-out;
 }
 @media (max-width: 768px){
-    .button-primary{
-        background-image: url(/coffee-house/svg/button-primary-hover.svg);
+    .button-primary .cup-button-primary {
+        display: block;
+        transform: scale(1);
     }
 }
 @media (max-width: 380px){
     .button-primary{
-        background-image: url(/coffee-house/svg/button-primary-hover.svg);
     }
 }
 @media (min-width: 768px){
-    .button-primary:hover {
-        background-image: url(/coffee-house/svg/button-primary-hover.svg);
-        transition: 0.3s;
+    .button-primary:hover .cup-button-primary  {
+        display: block;
+        transform: scale(1);
     }
 }
 /*------------SECTION-FAVORITE-COFFEE-----------*/
@@ -528,7 +550,6 @@ body{
 .item-description {
     display: flex;
     width: 480px;
-    max-width: 480px;
     flex-direction: column;
     align-items: center;
     gap: 20px;
@@ -571,6 +592,25 @@ body{
     font-weight: 600;
     line-height: 125%;
 }
+@media (max-width: 380px){
+    .carousel {
+        min-width: 348px;
+    }
+    .item-container {
+        min-width: 348px;
+    }
+    .active,
+    .next {
+        min-width: 348px;
+    }
+    .item-description {
+        width: 348px;
+    }
+    .img-slide {
+        width: 348px;
+        height: 348px;
+    }
+}
 .project-name {
     padding: 10px;
 }
@@ -588,18 +628,25 @@ body{
     border-radius: 100px;
     border: 1px solid var(--border-dark);
 }
+.arrow:hover {
+    border: 0;
+    background: var(--background-container);
+}
+.arrow:hover {
+    svg > path{
+        stroke: var(--background-body);
+    }
+}
 .left-arrow {
-    width: 24px;
-    height: 24px;
-    flex-shrink: 0;
     transform: rotate(180deg);
 }
 .control.right {
 }
 .right-arrow {
-    width: 24px;
-    height: 24px;
-    flex-shrink: 0;
+}
+.right-arrow:hover {
+    fill: var(--background-body);
+    stroke: var(--background-body);
 }
 .to-left{
     animation-name: left;
@@ -931,28 +978,55 @@ body{
         flex-direction: column;
     }
 }
-.button-app-store {
+.app-button {
+    display: flex;
     width: 200px;
-    height: 64px;
+    padding: 12px 20px;
+    align-items: center;
+    gap: 8px;
     border-radius: 100px;
-    background-image: url(/coffee-house/svg/apple-default.svg);
-    background-size: cover;
+    border: 1px solid var(--border-dark);
 }
-.button-google-play {
-    width: 200px;
-    height: 64px;
-    border-radius: 100px;
-    background-image: url(/coffee-house/svg/google-default.svg);
-    background-size: cover;
+.app-button-icon {
+}
+.app-button-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+.app-button-title {
+    color: var(--text-dark);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+}
+.app-button-text {
+    color: var(--text-dark);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
 }
 @media (min-width: 768px){
-    .button-app-store:hover {
-        background-image: url(/coffee-house/svg/apple-hover.svg);
-        transition: 0.3s;
+    .app-button:hover {
+        border: 0;
+        background: var(--background-container);
     }
-    .button-google-play:hover {
-        background-image: url(/coffee-house/svg/google-hover.svg);
-        transition: 0.3s;
+    .app-button:hover {
+        svg > path{
+            fill: var(--background-body);
+        }
+        .app-button-title {
+            color: var(--text-light);
+        }
+        .app-button-text {
+            color: var(--text-light);
+        }
     }
 }
 .name-app-default {
@@ -1042,39 +1116,24 @@ body{
     align-items: center;
     gap: 12px;
 }
-#twitter {
-    width: 60px;
-    height: 60px;
-    border-radius: 100px;
-    background-image: url(/coffee-house/svg/twitter-default.svg);
-    background-size: cover;
+.social-button {
 }
-#instagram {
+.icon-social-button {
+    display: flex;
     width: 60px;
     height: 60px;
+    justify-content: center;
+    align-items: center;
     border-radius: 100px;
-    background-image: url(/coffee-house/svg/instagram-default.svg);
-    background-size: cover;
-}
-#facebook {
-    width: 60px;
-    height: 60px;
-    border-radius: 100px;
-    background-image: url(/coffee-house/svg/facebook-default.svg);
-    background-size: cover;
+    border: 1px solid var(--border-light);
 }
 @media (min-width: 768px){
-    #twitter:hover {
-        background-image: url(/coffee-house/svg/twitter-hover.svg);
-        transition: 0.3s;
-    }
-    #instagram:hover {
-        background-image: url(/coffee-house/svg/instagram-hover.svg);
-        transition: 0.3s;
-    }
-    #facebook:hover {
-        background-image: url(/coffee-house/svg/facebook-hover.svg);
-        transition: 0.3s;
+    .icon-social-button:hover {
+        border: 0;
+        background: var(--background-body);
+        svg > path{
+            stroke: var(--background-backdrop);
+        }
     }
 }
 .footer-contacts-info {
@@ -1132,14 +1191,16 @@ body{
     .link-click:after{
         display: block;
         content: '';
-        width: 0%;
+        width: 100%;
         height: 2px;
         background: #E1D4C9;
-        transition: width 0.3s ease-in-out;
+        transform: scaleX(0);
+        transform-origin: center;
+        transition: transform 0.3s ease-in-out;
     }
     .link-click:hover:after,
     .link-click:focus:after{
-        width: 100%;
+        transform: scaleX(1);
     }
 }
 .icon-contact {

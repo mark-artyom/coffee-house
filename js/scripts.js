@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", function(){
     buttons.forEach(function(button){
         button.addEventListener('click', function(event){
             buttons.forEach(function(btn){
-                btn.classList.toggle('active');
+                btn.classList.toggle('decomposed');
             });
-            document.querySelector('.burger-menu-menu').classList.toggle('active');
+            document.querySelector('.burger-menu-menu').classList.toggle('decomposed');
             document.body.classList.toggle('lock');
         });
     });
