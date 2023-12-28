@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/coffee-house/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/coffee-house/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/coffee-house/favicon-16x16.png">
+    <link rel="manifest" href="/coffee-house/site.webmanifest">
+    <link rel="stylesheet" href="/coffee-house/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet">
+    <title>Coffee House</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <nav class="navi-menu">
+                <div class="navi-menu-container">
+                    <div class="menu-container">
+                        <div class="burger-menu-container">
+                            <div class="burger-menu-header">
+                                <div class="menu-container-logo">
+                                    <a href="/coffee-house/"><img class="logo" src="/coffee-house/svg/logo.svg" alt="logo"></a>
+                                </div>
+                                <div class="button-burger-menu">
+                                    <div class="button-burger-content">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="burger-menu-menu">
+                            <div class="menu-container-items">
+                                <div class="menu-item">
+                                    <a class="menu-item-link" href="#favorite-coffee">
+                                        Favorite coffee
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a class="menu-item-link" href="#about">
+                                        About
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a class="menu-item-link" href="#mobile-app">
+                                        Mobile app
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a class="menu-item-link" href="#footer">
+                                        Contact us
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="container-menu-coffee">
+                                <div class="menu-coffee-button">
+                                    <a class="menu-item-link" href="/coffee-house/html/menu.html">
+                                        Menu
+                                        <img class="coffee-cup" src="/coffee-house/svg/coffee-cup.svg" alt="coffee-cup">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <section class="hero">
+                <div class="hero-container">
+                    <div class="hero-container-wrapper">
+                        <video class="hero-container-video" playsinline autoplay muted loop poster="/coffee-house/img/img-hero.png">
+                            <source src="/coffee-house/video/video.mp4" type="video/mp4">
+                        </video>
+                        <div class="hero-container-offer">
+                            <h1 class="hero-offer-title"><a href="/coffee-house/html/menu.html"><i class="title-accent">Enjoy</i></a> premium<br>coffee at our<br>charming cafe</h1>
+                            <div class="hero-offer-text">
+                            With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.
+                            </div>
+                            <a class="link-button-primary" href="/coffee-house/html/menu.html">
+                                <div class="button-primary">
+                                    Menu
+                                    <img class="cup-button-primary" src="/coffee-house/svg/coffee-cup.svg" alt="coffee-cup">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <section class="favorite-coffee" id="favorite-coffee">
+            <div class="favorite-cofee-container">
+                <h2 class="coffee-container-title">Choose your <i class="title-accent">favorite</i> coffee</h2>
+                <div class="carousel">
+                    <div class="control left">
+                        <div class="arrow left">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="left-arrow">
+                                <path d="M6 12H18.5M18.5 12L12.5 6M18.5 12L12.5 18" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="item-container">
+                        <div class="item active">
+                            <div class="item-description">
+                                <img src="/coffee-house/img/coffee-slider-1.png" alt="" class="img-slide">
+                                <div class="item-description-text">
+                                    <div class="item-name">S’mores Frappuccino</div>
+                                    <div class="item-specification">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</div>
+                                    <div class="item-price">$5.50</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-description">
+                                <img src="/coffee-house/img/coffee-slider-2.png" alt="" class="img-slide">
+                                <div class="item-description-text">
+                                    <div class="item-name">Caramel Macchiato</div>
+                                    <div class="item-specification">Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under whipped thick foam.</div>
+                                    <div class="item-price">$5.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-description">
+                                <img src="/coffee-house/img/coffee-slider-3.png" alt="" class="img-slide">
+                                <div class="item-description-text">
+                                    <div class="item-name">Ice coffee</div>
+                                    <div class="item-specification">A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.</div>
+                                    <div class="item-price">$4.50</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control right">
+                        <div class="arrow right">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 12H18.5M18.5 12L12.5 6M18.5 12L12.5 18" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination-controls">
+                    <div class="pagination-control">
+                        <div class="progress-bar progress-active"></div>
+                    </div>
+                    <div class="pagination-control">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <div class="pagination-control">
+                        <div class="progress-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="about-container">
+                <h2 class="about-container-title">
+                    Resource is <i class="title-accent">the perfect and cozy place</i> where you can enjoy a variety hot beverages, relax, catch up with friends, or get some work done.
+                </h2>
+                <div class="about-container-images">
+                    <div class="image-column">
+                        <div class="column-1-ever">
+                            <img src="/coffee-house/img/about-1.png" alt="about-1" class="about-1">
+                        </div>
+                        <div class="column-1-fade">
+                            <img src="/coffee-house/img/about-2.png" alt="about-2" class="about-2">
+                        </div>
+                    </div>
+                    <div class="image-column">
+                        <div class="column-2-fade">
+                            <img src="/coffee-house/img/about-3.png" alt="about-3" class="about-3">
+                        </div>
+                        <div class="column-2-ever">
+                            <img src="/coffee-house/img/about-4.png" alt="about-4" class="about-4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mobile-app" id="mobile-app">
+            <div class="mobile-app-container">
+                <div class="mobile-app-offer">
+                    <div class="app-offer-title">
+                        <i class="title-accent">Download</i> our apps to start ordering
+                    </div>
+                    <h2 class="app-offer-text">
+                        Download the Resource app today and experience the comfort of ordering your favorite coffee from wherever you are
+                    </h2>
+                    <div class="app-offer-buttons">
+                        <a href="https://apps.apple.com/us/app/mcdonalds/id922103212" target="_blank">
+                            <div class="app-button">
+                                <div class="app-button-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                                        <path d="M26.7073 18.6307C26.6704 14.6324 30.065 12.6872 30.2203 12.5966C28.2977 9.86366 25.3178 9.49026 24.2707 9.46048C21.7679 9.20369 19.3403 10.9206 18.0654 10.9206C16.765 10.9206 14.8017 9.48529 12.6858 9.52747C9.96293 9.56841 7.41566 11.1055 6.0186 13.4923C3.13542 18.359 5.28572 25.5108 8.04802 29.4446C9.42981 31.3712 11.0444 33.5223 13.1578 33.4466C15.2254 33.3635 15.9978 32.1614 18.4929 32.1614C20.9651 32.1614 21.6903 33.4466 23.8457 33.3983C26.0647 33.3635 27.4618 31.463 28.7952 29.519C30.392 27.3108 31.0333 25.1362 31.0588 25.0245C31.0066 25.0071 26.7493 23.4229 26.7073 18.6307Z" fill="#403F3D"/>
+                                        <path d="M22.6357 6.87268C23.7477 5.51675 24.5086 3.67205 24.2974 1.80005C22.6879 1.86952 20.675 2.88554 19.5159 4.21169C18.4903 5.38029 17.5742 7.29571 17.8109 9.097C19.6189 9.2285 21.4753 8.20752 22.6357 6.87268Z" fill="#403F3D"/>
+                                    </svg>
+                                </div>
+                                <div class="app-button-description">
+                                    <p class="app-button-title">Available on the</p>
+                                    <p class="app-button-text">App Store</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.mcdonalds.app&hl=en" target="_blank">
+                            <div class="app-button">
+                                <div class="app-button-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                                        <path d="M3.7558 3.20297C3.39335 3.57289 3.18359 4.14884 3.18359 4.89471V31.4994C3.18359 32.2453 3.39335 32.8212 3.7558 33.1911L3.84525 33.2723L19.1359 18.37V18.0181L3.84525 3.11575L3.7558 3.20297Z" fill="#403F3D"/>
+                                        <path d="M26.0776 23.34L20.9863 18.37V18.0181L26.0837 13.0482L26.1979 13.1128L32.2345 16.4617C33.9573 17.4121 33.9573 18.976 32.2345 19.9324L26.1979 23.2753L26.0776 23.34Z" fill="#403F3D"/>
+                                        <path d="M25.2733 24.2007L20.0617 19.1195L4.68164 34.1166C5.25384 34.7031 6.18695 34.7737 7.24807 34.1873L25.2733 24.2007Z" fill="#403F3D"/>
+                                        <path d="M25.2733 12.1876L7.24807 2.20103C6.18695 1.62058 5.25384 1.69125 4.68164 2.27772L20.0617 17.2688L25.2733 12.1876Z" fill="#403F3D"/>
+                                    </svg>
+                                </div>
+                                <div class="app-button-description">
+                                    <p class="app-button-title">Available on the</p>
+                                    <p class="app-button-text">Google Play</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="mobile-app-screen">
+                    <img src="/coffee-house/img/mobile-screens.png" alt="mobile-app-screen" class="app-screen">
+                </div>
+            </div>
+        </section>
+        <footer class="footer" id="footer">
+            <div class="footer-container">
+                <div class="footer-container-offer">
+                    <h2 class="footer-offer-text">Sip, Savor, Smile. <i class="title-accent">It’s coffee time!</i></h2>
+                    <div class="footer-offer-social">
+                        <a href="https://twitter.com/McDonalds" class="social-button" target="_blank">
+                            <div class="icon-social-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M23 3.01006C23 3.01006 20.9821 4.20217 19.86 4.54006C19.2577 3.84757 18.4573 3.35675 17.567 3.13398C16.6767 2.91122 15.7395 2.96725 14.8821 3.29451C14.0247 3.62177 13.2884 4.20446 12.773 4.96377C12.2575 5.72309 11.9877 6.62239 12 7.54006V8.54006C10.2426 8.58562 8.50127 8.19587 6.93101 7.4055C5.36074 6.61513 4.01032 5.44869 3 4.01006C3 4.01006 -1 13.0101 8 17.0101C5.94053 18.408 3.48716 19.109 1 19.0101C10 24.0101 21 19.0101 21 7.51006C20.9991 7.23151 20.9723 6.95365 20.92 6.68006C21.9406 5.67355 23 3.01006 23 3.01006Z" stroke="#E1D4C9" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/mcdonalds/" class="social-button" target="_blank">
+                            <div class="icon-social-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="#E1D4C9" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16Z" stroke="#E1D4C9"/>
+                                    <path d="M17.5 6.51L17.51 6.49889" stroke="#E1D4C9" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </a>
+                        <a href="https://www.facebook.com/McDonalds/" class="social-button" target="_blank">
+                            <div class="icon-social-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M17 2H14C12.6739 2 11.4021 2.52678 10.4645 3.46447C9.52678 4.40215 9 5.67392 9 7V10H6V14H9V22H13V14H16L17 10H13V7C13 6.73478 13.1054 6.48043 13.2929 6.29289C13.4804 6.10536 13.7348 6 14 6H17V2Z" stroke="#E1D4C9" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-contacts-info">
+                    <div class="cotacts-info-title">Contact us</div>
+                    <div class="contacts-info-links">
+                        <div class="link-item-address">
+                            <a href="https://maps.google.com?saddr=Current+Location&daddr=43.12345,-76.12345" class="link-click">
+                                <img src="/coffee-house/svg/pin-alt.svg" alt="address" class="icon-contact">
+                                <span class="link-contact-default">8558 Green Rd.,  LA</span>
+                            </a>
+                        </div>
+                        <div class="link-item-phone">
+                            <a href="tel:+1(603)555-0123" class="link-click">
+                                <img src="/coffee-house/svg/phone.svg" alt="phone" class="icon-contact">
+                                <span class="link-contact-default">+1 (603) 555-0123</span>
+                            </a>
+                        </div>
+                        <div class="item-working-mode">
+                            <div class="working-mode">
+                                <img src="/coffee-house/svg/clock.svg" alt="working-mode" class="icon-contact">
+                                <span class="link-contact-default">Mon-Sat: 9:00 AM – 23:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="/coffee-house/js/scripts.js"></script>
+</body>
+</html>
