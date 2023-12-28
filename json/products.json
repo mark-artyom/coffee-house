@@ -1,4 +1,5 @@
-[
+{
+  "products": [
     {
       "image": "/coffee-house/img/coffee-1.png",
       "name": "Irish coffee",
@@ -719,3 +720,4 @@
       ]
     }
   ]
+}

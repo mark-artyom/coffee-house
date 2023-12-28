@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/coffee-house/favicon-16x16.png">
     <link rel="manifest" href="/coffee-house/site.webmanifest">
     <link rel="stylesheet" href="/coffee-house/css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet">
     <title>Coffee House</title>
 </head>
 <body>
@@ -72,205 +72,35 @@
                             <h1>Behind each of our cups hides an <i class="title-accent">amazing surprise</i></h1>
                         </div>
                         <div class="shop-mehu-tabs">
-                            <div class="item-tab-active">
-                                <div class="tab-active-icon">
-                                    <div class="tab-item">☕</div>
+                            <div class="item-tab choice" id="indexCoffee">
+                                <div class="tab-icon">
+                                    <div class="tab-emoji">☕</div>
                                 </div>
-                                <div class="tab-active-text">Coffee</div>
+                                <div class="tab-text">Coffee</div>
                             </div>
-                            <div class="item-tab-inactive">
-                                <div class="tab-inactive-icon">
-                                    <div class="tab-item">🍵</div>
+                            <div class="item-tab" id="indexTea">
+                                <div class="tab-icon">
+                                    <div class="tab-emoji">🍵</div>
                                 </div>
-                                <div class="tab-inactive-text">Tea</div>
+                                <div class="tab-text">Tea</div>
                             </div>
-                            <div class="item-tab-inactive">
-                                <div class="tab-inactive-icon">
-                                    <div class="tab-item">🍰</div>
+                            <div class="item-tab" id="indexDessert">
+                                <div class="tab-icon">
+                                    <div class="tab-emoji">🍰</div>
                                 </div>
-                                <div class="tab-inactive-text">Dessert</div>
+                                <div class="tab-text">Dessert</div>
                             </div>
                         </div>
                     </div>
-                    <div class="shop-menu-grid">
-                        <div class="menu-grid-preview">
-                            <div class="grid-preview-box">
-                                <img src="/coffee-house/img/coffee-1.png" alt="product-1" class="product">
-                            </div>
-                            <div class="grid-preview-specification">
-                                <div class="preview-specification-title">
-                                    <div class="preview-specification-name">Irish coffee</div>
-                                    <div class="preview-specification-description">Fragrant black coffee with <br>Jameson Irish whiskey and <br>whipped milk</div>
-                                </div>
-                                <div class="grid-preview-price">$7.00</div>
-                            </div>
-                        </div>
-                        <div class="menu-grid-preview">
-                            <div class="grid-preview-box">
-                                <img src="/coffee-house/img/coffee-2.png" alt="product-2" class="product">
-                            </div>
-                            <div class="grid-preview-specification">
-                                <div class="preview-specification-title">
-                                    <div class="preview-specification-name">Kahlua coffee</div>
-                                    <div class="preview-specification-description">Classic coffee with milk and Kahlua <br>liqueur under a cap of frothed milk</div>
-                                </div>
-                                <div class="grid-preview-price">$7.00</div>
-                            </div>
-                        </div>
-                        <div class="menu-grid-preview">
-                            <div class="grid-preview-box">
-                                <img src="/coffee-house/img/coffee-3.png" alt="product-3" class="product">
-                            </div>
-                            <div class="grid-preview-specification">
-                                <div class="preview-specification-title">
-                                    <div class="preview-specification-name">Honey raf</div>
-                                    <div class="preview-specification-description">Espresso with frothed milk, cream <br>and aromatic honey</div>
-                                </div>
-                                <div class="grid-preview-price">$5.50</div>
-                            </div>
-                        </div>
-                        <div class="menu-grid-preview">
-                            <div class="grid-preview-box">
-                                <img src="/coffee-house/img/coffee-4.png" alt="product-4" class="product">
-                            </div>
-                            <div class="grid-preview-specification">
-                                <div class="preview-specification-title">
-                                    <div class="preview-specification-name">Ice cappuccino</div>
-                                    <div class="preview-specification-description">Cappuccino with soft thick foam in <br>summer version with ice</div>
-                                </div>
-                                <div class="grid-preview-price">$5.00</div>
-                            </div>
-                        </div>
-                        <div class="menu-grid-preview">
-                            <div class="grid-preview-box">
-                                <img src="/coffee-house/img/coffee-5.png" alt="product-5" class="product">
-                            </div>
-                            <div class="grid-preview-specification">
-                                <div class="preview-specification-title">
-                                    <div class="preview-specification-name">Espresso</div>
-                                    <div class="preview-specification-description">Classic black coffee</div>
-                                </div>
-                                <div class="grid-preview-price">$4.50</div>
-                            </div>
-                        </div>
-                        <div class="menu-grid-preview">
-                            <div class="grid-preview-box">
-                                <img src="/coffee-house/img/coffee-6.png" alt="product-6" class="product">
-                            </div>
-                            <div class="grid-preview-specification">
-                                <div class="preview-specification-title">
-                                    <div class="preview-specification-name">Latte</div>
-                                    <div class="preview-specification-description">Espresso coffee with the addition <br>of steamed milk <br>and dense milk foam</div>
-                                </div>
-                                <div class="grid-preview-price">$5.50</div>
-                            </div>
-                        </div>
-                        <div class="menu-grid-preview">
-                            <div class="grid-preview-box">
-                                <img src="/coffee-house/img/coffee-7.png" alt="product-7" class="product">
-                            </div>
-                            <div class="grid-preview-specification">
-                                <div class="preview-specification-title">
-                                    <div class="preview-specification-name">Latte macchiato</div>
-                                    <div class="preview-specification-description">Espresso with frothed milk and <br>chocolate</div>
-                                </div>
-                                <div class="grid-preview-price">$5.50</div>
-                            </div>
-                        </div>
-                        <div class="menu-grid-preview">
-                            <div class="grid-preview-box">
-                                <img src="/coffee-house/img/coffee-8.png" alt="product-8" class="product">
-                            </div>
-                            <div class="grid-preview-specification">
-                                <div class="preview-specification-title">
-                                    <div class="preview-specification-name">Coffee with cognac</div>
-                                    <div class="preview-specification-description">Fragrant black coffee with cognac <br>and whipped cream</div>
-                                </div>
-                                <div class="grid-preview-price">$6.50</div>
-                            </div>
-                        </div>
+                    <div class="shop-menu-grid" id='product-container'>
                     </div>
                 </div>
             </section>
         </header>
-        <section class="modal">
-            <div class="modal-container">
-                <div class="modal-preview">
-                    <div class="modal-preview-box">
-                        <img src="/coffee-house/img/coffee-1.png" alt="" class="modal-preview-product">
-                    </div>
-                    <div class="modal-preview-description">
-                        <div class="modal-specification-title">
-                            <div class="modal-specification-name">Irish coffee</div>
-                            <div class="modal-specification-description">Fragrant black coffee with Jameson Irish whiskey and <br>whipped milk</div>
-                        </div>
-                        <div class="modal-specification-size">
-                            <div class="modal-size-title">Size</div>
-                            <div class="modal-size-tabs">
-                                <div class="modal-tab-active">
-                                    <div class="modal-active-icon">
-                                        <div class="modal-icon-text">S</div>
-                                    </div>
-                                    <div class="modal-active-value">200 ml</div>
-                                </div>
-                                <div class="modal-tab-inactive">
-                                    <div class="modal-inactive-icon">
-                                        <div class="modal-icon-text">M</div>
-                                    </div>
-                                    <div class="modal-inactive-value">300 ml</div>
-                                </div>
-                                <div class="modal-tab-inactive">
-                                    <div class="modal-inactive-icon">
-                                        <div class="modal-icon-text">L</div>
-                                    </div>
-                                    <div class="modal-inactive-value">400 ml</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-specification-additives">
-                            <div class="modal-additives-title">Additives</div>
-                            <div class="modal-additives-tabs">
-                                <div class="modal-tab-item">
-                                    <div class="modal-tab-number">
-                                        <div class="modal-number">1</div>
-                                    </div>
-                                    <div class="modal-additive-name">Sugar</div>
-                                </div>
-                                <div class="modal-tab-item">
-                                    <div class="modal-tab-number">
-                                        <div class="modal-number">2</div>
-                                    </div>
-                                    <div class="modal-additive-name">Cinnamon</div>
-                                </div>
-                                <div class="modal-tab-item">
-                                    <div class="modal-tab-number">
-                                        <div class="modal-number">3</div>
-                                    </div>
-                                    <div class="modal-additive-name">Syrup</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-specification-total">
-                            <div class="modal-total-title">Total:</div>
-                            <div class="modal-total-value">$7.00</div>
-                        </div>
-                        <div class="modal-specification-alert">
-                            <div class="modal-alert-icon">
-                                <img src="/coffee-house/svg/info-empty.svg" alt="info-empty" class="info-empty">
-                            </div>
-                            <div class="modal-alert-text">The cost is not final. Download our mobile app to see the final price and place your <br>order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</div>
-                        </div>
-                        <a href="">
-                            <div class="modal-button-secondary"></div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
         <footer class="footer" id="footer">
             <div class="footer-container">
                 <div class="footer-container-offer">
-                    <div class="footer-offer-text">Sip, Savor, Smile.<br><i class="title-accent">It’s coffee time!</i></div>
+                    <h2 class="footer-offer-text">Sip, Savor, Smile. <i class="title-accent">It’s coffee time!</i></h2>
                     <div class="footer-offer-social">
                         <a href="https://twitter.com/McDonalds" class="social-button" target="_blank">
                             <div class="icon-social-button">
@@ -307,7 +137,7 @@
                             </a>
                         </div>
                         <div class="link-item-phone">
-                            <a href="tel:+1 (603) 555-0123" class="link-click">
+                            <a href="tel:+1(603)555-0123" class="link-click">
                                 <img src="/coffee-house/svg/phone.svg" alt="phone" class="icon-contact">
                                 <span class="link-contact-default">+1 (603) 555-0123</span>
                             </a>
@@ -323,6 +153,80 @@
             </div>
         </footer>
     </div>
-    <script src="/coffee-house/js/scripts.js"></script>
+    <section class="modal">
+        <div class="modal-container">
+            <div class="modal-preview">
+                <div class="modal-preview-box">
+                    <img src="/coffee-house/img/coffee-1.png" alt="/coffee-house/img/coffee-1.png" class="modal-preview-product">
+                </div>
+                <div class="modal-preview-description">
+                    <div class="modal-specification-title">
+                        <div class="modal-specification-name"></div>
+                        <div class="modal-specification-description"></div>
+                    </div>
+                    <div class="modal-specification-size">
+                        <div class="modal-size-title">Size</div>
+                        <div class="modal-size-tabs">
+                            <div class="modal-tab one-size" id="s">
+                                <div class="modal-icon">
+                                    <div class="modal-icon-text">S</div>
+                                </div>
+                                <div class="modal-value">200 ml</div>
+                            </div>
+                            <div class="modal-tab" id="m">
+                                <div class="modal-icon">
+                                    <div class="modal-icon-text">M</div>
+                                </div>
+                                <div class="modal-value">300 ml</div>
+                            </div>
+                            <div class="modal-tab" id="l">
+                                <div class="modal-icon">
+                                    <div class="modal-icon-text">L</div>
+                                </div>
+                                <div class="modal-value">400 ml</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-specification-additives">
+                        <div class="modal-additives-title">Additives</div>
+                        <div class="modal-additives-tabs">
+                            <div class="modal-tab-item">
+                                <div class="modal-tab-number">
+                                    <div class="modal-number">1</div>
+                                </div>
+                                <div class="modal-additive-name">Sugar</div>
+                            </div>
+                            <div class="modal-tab-item">
+                                <div class="modal-tab-number">
+                                    <div class="modal-number">2</div>
+                                </div>
+                                <div class="modal-additive-name">Cinnamon</div>
+                            </div>
+                            <div class="modal-tab-item">
+                                <div class="modal-tab-number">
+                                    <div class="modal-number">3</div>
+                                </div>
+                                <div class="modal-additive-name">Syrup</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-specification-total">
+                        <div class="modal-total-title">Total:</div>
+                        <div class="modal-total-value"></div>
+                    </div>
+                    <div class="modal-specification-alert">
+                        <div class="modal-alert-icon">
+                            <img src="/coffee-house/svg/info-empty.svg" alt="info-empty" class="info-empty">
+                        </div>
+                        <h3 class="modal-alert-text">The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</h3>
+                    </div>
+                    <div class="modal-button-secondary">
+                        <div class="close-button-text">Close</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="/coffee-house/js/menu.js"></script>
 </body>
 </html>

@@ -1,3 +1,4 @@
+"use strict"; 
 /*------------------BURGER-MENU-----------------*/
 document.addEventListener("DOMContentLoaded", function(){
     let buttons = document.querySelectorAll('.button-burger-content');
